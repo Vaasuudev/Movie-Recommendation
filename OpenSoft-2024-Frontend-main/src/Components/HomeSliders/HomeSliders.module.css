@@ -1,0 +1,150 @@
+.slider__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view__more {
+  display: block;
+  position: relative;
+  right: 0;
+  background-color: #fffe3e;
+  color: #332b50;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-size: large;
+}
+
+.commentCardParent {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.view__more:hover {
+  cursor: pointer;
+  background-color: #cccc00;
+  /* transform: translateY(-8px); */
+}
+.slider__movies {
+  box-sizing: border-box;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  /* note: dont change the padding at all it will cause scrolling effect on the cards */
+  padding: 0.2rem 2.5rem 0.2rem 0rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: inherit;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.container {
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+}
+
+.LeftbtnContainer {
+  position: absolute;
+  left: 0.5rem;
+  z-index: 30;
+  transform: rotate(-90deg);
+}
+.RightbtnContainer {
+  /* display: flex; */
+  position: absolute;
+  right: 0.5rem;
+  z-index: 30;
+  transform: rotate(90deg);
+}
+
+.LeftbtnContainer,
+.RightbtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.LeftbtnContainer:hover {
+  transform: scale(1.2) rotate(-90deg) translateY(5px);
+}
+.RightbtnContainer:hover {
+  transform: scale(1.2) rotate(90deg) translateY(5px);
+}
+
+.LeftbtnContainer button,
+.RightbtnContainer button {
+  /* background-color: rgba(130, 118, 118, 0.445); */
+  background-color: transparent;
+  height: 2.3rem;
+  width: 2.3rem;
+  z-index: 3;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3 ease;
+}
+
+.LeftbtnContainer button:hover,
+.RightbtnContainer button:hover {
+  background-color: #1f0c19;
+}
+
+.slider {
+  padding-right: 0rem;
+}
+.slider__movies::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 3rem;
+}
+.slider__title::first-letter {
+  color: #fffe3e;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 320px) {
+  .sliders {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .slider__title {
+    font-size: 2rem;
+  }
+  .slider__title::first-letter {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__title {
+    margin-left: 1rem;
+  }
+  .LeftbtnContainer,
+  .RightbtnContainer {
+    display: none;
+  }
+  .view__more {
+    padding: 0.5rem;
+    font-size: medium;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .sliders {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .slider__title {
+    font-size: 2.5rem;
+  }
+  .slider__title::first-letter {
+    font-size: 3rem;
+  }
+}

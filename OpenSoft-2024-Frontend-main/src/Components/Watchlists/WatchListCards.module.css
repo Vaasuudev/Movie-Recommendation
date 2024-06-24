@@ -1,0 +1,180 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 10rem;
+  width: 15rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  /* background-color: #a49d9d36; */
+  background-image: linear-gradient(to right, #201f1f, #8a898976);
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+
+  transition: all 0.3s linear;
+  /* box-shadow: 2.2px 2.2px 6px rgba(255, 0, 0, .4); */
+}
+.card:hover {
+  box-shadow: none;
+}
+.card svg {
+  height: 3rem;
+  width: 3rem;
+}
+.card > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleofcard {
+  font-size: 1.25rem;
+  display: flex;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(12ch + 0.6rem);
+}
+
+.cardcontainer {
+  display: flex;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 10rem;
+  width: 15rem;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  border-left: 4px solid rgba(255, 5, 5, 0.569);
+}
+
+.nothingToShow {
+  margin: 0.5rem 0 0.8rem 1.8rem;
+  color: #6c757d;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-left: 1.8rem;
+}
+
+.cardcontainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -0.7rem, 0px);
+}
+
+.slider__movies {
+  box-sizing: border-box;
+  gap: 2rem;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: scroll;
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 0 -20px 0px 0px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.LeftbtnContainer {
+  position: absolute;
+  left: 0.5rem;
+  z-index: 30;
+  transform: rotate(-90deg);
+}
+.RightbtnContainer {
+  /* display: flex; */
+  position: absolute;
+  right: 0.5rem;
+  z-index: 30;
+  transform: rotate(90deg);
+}
+
+.LeftbtnContainer,
+.RightbtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.LeftbtnContainer:hover {
+  transform: scale(1.2) rotate(-90deg) translateY(5px);
+}
+.RightbtnContainer:hover {
+  transform: scale(1.2) rotate(90deg) translateY(5px);
+}
+
+.LeftbtnContainer button,
+.RightbtnContainer button {
+  /* background-color: rgba(130, 118, 118, 0.445); */
+  background-color: transparent;
+  height: 2.3rem;
+  width: 2.3rem;
+  z-index: 3;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3 ease;
+}
+
+.LeftbtnContainer button:hover,
+.RightbtnContainer button:hover {
+  background-color: rgba(130, 118, 118, 0.599);
+}
+
+.slider {
+  padding-right: 2rem;
+}
+.slider__movies::-webkit-scrollbar {
+  display: none;
+}
+.sliders {
+  margin-right: 3rem;
+}
+
+.delete_icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  z-index: 100;
+}
+.delete_icon:hover {
+  transform: scale(1.2);
+}
+.delete_icon img {
+  height: 1.5rem;
+}
+
+.nothingToShow svg {
+  height: 70px;
+  width: 70px;
+}
+.nothingToShow {
+  width: 100%;
+  text-align: center;
+}
+.favorites_card {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin-left: -1.5rem;
+  /* justify-content: space-between; */
+}

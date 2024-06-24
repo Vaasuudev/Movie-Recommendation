@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+input[type="text"] {
+  font-family: "Jost", sans-serif;
+}
+textarea {
+  font-family: "Jost", sans-serif;
+}
+body {
+  color: white;
+  font-family: "Jost", sans-serif;
+  background-color: rgb(31, 12, 25);
+  overflow-x: hidden;
+}
+button {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+}
+
+.basic_video .vds-pip-button {
+  display: none;
+}
+.basic_video .vds-google-cast-button {
+  display: none;
+}
+.vds-radio-hint {
+  margin-left: auto;
+}
+.vds-menu-button-hint {
+  margin-left: auto;
+}
+.vds-settings-menu-items {
+  margin: auto;
+}
+.vds-menu-items {
+  margin: auto;
+}
+.vds-slider-chapter {
+  margin-top: 2%;
+}
+.vds-slider-thumb {
+  display: none;
+}
+.vds-controls-group {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vds-slider-chapters {
+  margin: auto;
+  padding: auto;
+}
+.vds-radio-label {
+  margin-left: 1rem;
+}
+.vds-menu-button-label {
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 676px) {
+  .vds-time-group {
+    margin-bottom: -3%;
+  }
+  .vds-fullscreen-button {
+    margin-bottom: -3%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .vds-time-group {
+    margin-bottom: -7%;
+  }
+  .vds-fullscreen-button {
+    margin-bottom: -6%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .vds-time-group {
+    margin-bottom: -8%;
+  }
+  .vds-fullscreen-button {
+    margin-bottom: -7%;
+  }
+}
